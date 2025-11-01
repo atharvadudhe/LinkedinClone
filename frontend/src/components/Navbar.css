@@ -1,0 +1,167 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Inter", sans-serif;
+}
+
+main,
+.page-content {
+  margin-top: 64px;
+}
+
+.navbar {
+  background-color: white;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
+  border-bottom: 1px solid #e5e7eb;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 50;
+}
+
+.navbar-container {
+  max-width: 1128px;
+  margin: 0 auto;
+  padding: 0 16px;
+}
+
+.navbar-inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 64px;
+}
+
+.navbar-left {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.logo-icon {
+  width: 32px;
+  height: 32px;
+  color: #2563eb;
+  transition: transform 0.2s ease;
+}
+
+.logo-icon:hover {
+  transform: scale(1.1);
+}
+
+.search-bar {
+  display: flex;
+  align-items: center;
+  background-color: #f3f4f6;
+  border-radius: 9999px;
+  padding: 6px 10px;
+  transition: all 0.2s ease;
+}
+
+.search-bar:focus-within {
+  outline: 2px solid #2563eb;
+}
+
+.search-icon {
+  width: 20px;
+  height: 20px;
+  color: #6b7280;
+}
+
+.search-input {
+  background: transparent;
+  border: none;
+  outline: none;
+  margin-left: 8px;
+  width: 190px;
+  font-size: 14px;
+  color: #374151;
+}
+
+.search-input::placeholder {
+  color: #9ca3af;
+}
+
+.navbar-center {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+}
+
+.nav-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #6b7280;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.nav-item:hover {
+  color: #2563eb;
+}
+
+.nav-icon {
+  width: 24px;
+  height: 24px;
+}
+
+.nav-text {
+  font-size: 11px;
+  margin-top: 4px; 
+  font-weight: 500;
+  text-align: center;
+}
+
+.profile-avatar {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background-color: #e5e7eb;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  border: 2px solid transparent;
+  transition: border 0.2s ease;
+}
+
+.profile-avatar:hover {
+  border-color: #2563eb;
+}
+
+.profile-avatar img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.profile-initial {
+  font-size: 13px;
+  font-weight: 600;
+  color: #374151;
+}
+
+.logout-btn:hover {
+  color: #dc2626;
+}
+
+@media (max-width: 768px) {
+  .navbar-inner {
+    flex-direction: column;
+    height: auto;
+    padding: 12px 0;
+    gap: 8px;
+  }
+
+  .navbar-center {
+    gap: 16px;
+  }
+
+  .search-input {
+    width: 140px;
+  }
+}
