@@ -162,3 +162,16 @@ If you want, I can also:
 - Add tests for the signup/upload flow
 
 Enjoy building — tell me if you want the `.env.example` or to harden the upload flow further.
+
+---
+
+## 🌐 Deployment Links
+
+Frontend (Vercel): [https://linkedinclone-frontend.onrender.com](https://linkedin-clone-iota-lime.vercel.app/)
+
+Backend (Render): [https://linkedinclone-backend.onrender.com](https://linkedinclone-fnqv.onrender.com/)
+
+---
+## 👨‍💻 Author
+
+Name: Atharva Dudhe
